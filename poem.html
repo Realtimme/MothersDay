@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +7,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="CSS/poem.css">
 </head>
-
 <body>
+    <!-- Music Player -->
+    <div class="music-player">
+        <audio id="background-music" loop autoplay>
+            <!-- Replace with your music file -->
+            <source src="Lovers'_Oath.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="music-toggle" class="music-btn">
+            <i class="fas fa-pause"></i>
+            <span id="music-status">Pause Music</span>
+        </button>
+        <div class="volume-control">
+            <i class="fas fa-volume-up"></i>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5">
+        </div>
+    </div>
+
     <div class="animation-container">
         <div class="floating-hearts" id="hearts-container"></div>
 
@@ -24,26 +39,22 @@
         </div>
 
         <div class="message message-3">
-            I wanna hear you laugh. <br>
+            I love hearing you laugh. <br>
             I want to see your smile, hear your voice, and just be close to you.
         </div>
 
         <div class="message message-4">
-            Though we are seperate, <span class="highlight">My Love for you is unlimited.</span>
+            Though we are together, <span class="highlight">I'm never letting you go.</span>
         </div>
 
         <div class="message message-5">
-           I promise you i will make you the happiest girl even I'm not good enough.
+           i will make sure to always be there for you.
         </div>
 
         <div class="message message-6">
-    <span class="highlight-1">
-        <a href="https://realtimme.github.io/love-message/" target="_blank">I love you.</a>
-    </span>
-    More than words can express, more than actions can show, <br>
-    and more than my heart can contain.
-</div>
-
+            <span class="highlight-1">I love you.</span> More than words can express, more than actions can show, <br>
+            and more than my heart can contain.
+        </div>
 
         <div class="message message-7">
             So, Happy Birthday my dearest one! <br>
@@ -64,7 +75,8 @@
             <button class="nav-btn" id="next-btn">Next</button>
         </div>
     </div>
+    
+    <!-- IMPORTANT: Use the updated JS file below -->
     <script src="JS/poem.js"></script>
 </body>
-
 </html>
